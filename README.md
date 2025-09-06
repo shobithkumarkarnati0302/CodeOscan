@@ -4,7 +4,6 @@
 
 CodeOscan is a modern web application that leverages Google's Generative AI to provide comprehensive code analysis, complexity assessment, and optimization suggestions. Built with React and Node.js, it offers an intuitive interface for developers to understand and improve their code quality.
 
-![CodeOscan Banner](https://via.placeholder.com/800x200/4F46E5/FFFFFF?text=CodeOscan+-+AI+Code+Analysis)
 
 ## ✨ Features
 
