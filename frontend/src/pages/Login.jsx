@@ -20,7 +20,8 @@ function Login() {
     try {
       const res = await api.post('/api/auth/login', { email, password });
       localStorage.setItem('token', res.data.token);
-      navigate('/dashboard');
+      localStorage.setItem('user', JSON.stringify(res.data.user));
+      navigate('/');
     } catch (err) {
       setError(err.response?.data?.error || 'Login failed');
     } finally {

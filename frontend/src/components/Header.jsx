@@ -81,7 +81,7 @@ function Header() {
                   className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 transition-all duration-200 hover:scale-105"
                 >
                   <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-full flex items-center justify-center text-white text-sm font-semibold">
-                    {user?.name?.charAt(0)?.toUpperCase() || user?.email?.charAt(0)?.toUpperCase() || 'U'}
+                    {user?.fullName?.charAt(0)?.toUpperCase() || user?.email?.charAt(0)?.toUpperCase() || 'U'}
                   </div>
                   <span className="hidden sm:inline max-w-32 truncate">
                     {user?.fullName || user?.email}
@@ -95,7 +95,7 @@ function Header() {
                 {isUserMenuOpen && (
                   <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-200 py-2 animate-fadeIn">
                     <div className="px-4 py-2 border-b border-gray-100">
-                      {/* <p className="text-sm font-medium text-gray-900 truncate">{user?.fullName || 'User'}</p> */}
+                      <p className="text-sm font-medium text-gray-900 truncate">{user?.fullName || 'User'}</p>
                       <p className="text-xs text-gray-500 truncate">{user?.email}</p>
                     </div>
                     <Link
