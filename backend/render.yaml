@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: codeoscan-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        fromDatabase:
+          name: codeoscan-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GOOGLE_AI_API_KEY
+        sync: false
+
+databases:
+  - name: codeoscan-db
+    databaseName: codeoscan
+    user: codeoscan
