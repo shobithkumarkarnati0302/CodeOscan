@@ -318,11 +318,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Tailwind CSS** for the utility-first CSS framework
 - **MongoDB** for the flexible database solution
 
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/codeoscan/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/codeoscan/discussions)
-- **Email**: support@codeoscan.dev
 
 ## 🗺️ Roadmap
 
@@ -338,6 +333,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ by the CodeOscan Team**
-
-*Empowering developers with AI-driven code insights*
